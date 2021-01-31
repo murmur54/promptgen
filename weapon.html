@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Another RPG Prompt generator!</title>
+    <title>Another RPG Weapon generator!</title>
 
     <link rel="stylesheet" href="/style.css" />
 
-    <script src="/prompt-script.js" defer></script>
+    <script src="/weapon-script.js" defer></script>
   </head>
   <body>
     <div class="grid-container">
       <div class="title">
-        <h1>Another RPG Prompt Generator</h1>
+        <h1>Another RPG Weapon Generator</h1>
 
         <nav>
-          <a href="weapon.html">Weapons</a> | <a href="index.html">Prompts</a> |
+          <a id="active" href="weapon.html">Weapons</a> | <a href="index.html">Prompts</a> |
           <a href="enemy.html">Enemies</a> |
           <a href="magic.html">Magic</a>
         </nav>
@@ -26,11 +26,12 @@
         <div class="messageBox">
           <p id="message">Message Here!</p>
           <br> <br> <br> <br> <br>
-          <p id="guide">format: "A B then C"</p>
+          <p id="guide">format: "A, the B of C"</p>
           <div class="buttonHolder">
             <button class="locker" type="button" id="locka" data-inline="true" onclick="doLockA();"> Lock A </button>
             <button class="locker" type="button" id="lockb" data-inline="true" onclick="doLockB();"> Lock B </button>
             <button class="locker" type="button" id="lockc" data-inline="true" onclick="doLockC();"> Lock C </button>
+            <button class="locker" type="button" id="lockd" data-inline="true" onclick="doLockD();"> Lock d </button>
           </div>
           <br>
           <button id="new" type="button" onclick="getMessage()">
@@ -45,12 +46,16 @@
 
     <footer class="footer">
       <p>
-            Hello! Thank you for visiting my piss-awful website. This generator creates zany, moderately abstract fantasy encounters, and assumes you're in some non-descript fantasy town. There isn't much more to it than that! <br>
+        <center>
+            Hello! Thank you for visiting my piss-awful website. This generator generates zany, moderately abstract fantasy encounters, and assumes you're in some non-descript fantasy town. There isn't much more to it than that! <br>
             If you see any parts of the message that you like, just click the "Lock X" button to keep that part for the next message you generate. <br><br>
             Currently, theres only 10 options for each message part, but more will be added soon, along with more generators! 
+        </center>
       </p>
       <p>
+        <center>
           Made by murmur54 through <a href="https://glitch.com">glitch.com</a>
+        </center>
       </p>
     </footer>
 

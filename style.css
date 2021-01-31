@@ -1,0 +1,71 @@
+
+body {
+    font-family: serif;
+    margin: 2em;
+    text-align: center;
+    background-color: #d6d3c9;
+    font-style: normal;
+    color: #303030;
+  }
+  
+  a {
+    color: red;
+  }
+  
+  h1 {
+    font-style: normal;
+    color: #303030;
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  p{
+    text-align: center;
+  }
+
+  button {
+    border-radius: 5px;
+    background-color: #d6d0c1;
+    color: red;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 10px;
+    grid-template-areas:
+      "title title title title"
+      "gen gen gen gen"
+      "gen gen gen gen";
+    background-color: #b0a992;
+    border: 7px outset grey;
+    border-radius: 5px;
+  }
+  .title {
+    grid-area: title;
+    background-color: #b0a992;
+  }
+  .gen {
+    grid-area: gen;
+    background-color: #b0a990;
+  }
+  
+  .messageBox {
+    padding: 10px;
+    border: 2px normal black;
+  }
+  
+  #message {
+    font-size: 1.5em;
+    border: 1px normal black;
+    text-transform: uppercase;
+  }
+  
+  #new {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #e6e0d1;
+    font-weight: bold;
+  }
+  
